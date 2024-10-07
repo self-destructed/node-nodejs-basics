@@ -2,7 +2,7 @@
 2. Screenshot: -
 3. Repo: [link](https://github.com/self-destructed/node-nodejs-basics)
 4. Done 08.10.2024 / deadline 08.10.2024
-5. Score: +-176 / 206
+5. Score: +-206 / 206
 
 
 
@@ -36,9 +36,9 @@
  - [x]   +10 worker.js implemented properly
  - [x]   +30 main.js implemented properly
 ###   Child Processes (src/cp)
- - [ ]    +10 spawns child process
- - [ ]    +10 child process stdin receives input from master process stdin
- - [ ]    +10 child process stdout sends data to master process stdout
+ - [x]    +10 spawns child process
+ - [x]    +10 child process stdin receives input from master process stdin
+ - [x]    +10 child process stdout sends data to master process stdout
 
 ## Forfeits
 
