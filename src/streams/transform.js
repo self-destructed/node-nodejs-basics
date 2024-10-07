@@ -1,5 +1,5 @@
 import { Transform } from 'stream';
-
+import { EOL } from 'os';
 
 const reverseTranform = new Transform({
     transform(chunk, encoding, callback) {
@@ -8,8 +8,15 @@ const reverseTranform = new Transform({
     }
 });
 
+const newlineTransform = new Transform({
+    transform(chunk, _, callback) {
+        this.push(chunk + EOL);
+        callback();
+    }
+});
+
 const transform = async () => {
-    process.stdin.pipe(reverseTranform).pipe(process.stdout);
+    process.stdin.pipe(reverseTranform).pipe(newlineTransform).pipe(process.stdout);
 };
 
 await transform();
