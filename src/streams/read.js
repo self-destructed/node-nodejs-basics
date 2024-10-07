@@ -1,5 +1,5 @@
 
-import { promises as fs, createReadStream } from 'fs';
+import { createReadStream } from 'fs';
 import path from 'path';
 import { EOL } from 'os';
 
